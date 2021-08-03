@@ -61,7 +61,7 @@ $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/fskhrijuanda/chrome_elf/releases/download/0.1/chrome_elf.zip',
+    'https://github.com/fskhrijuanda/SpotifyCrack/releases/download/0.1/chrome_elf.zip',
     # Local file path
     "$PWD\chrome_elf.zip"
   )
