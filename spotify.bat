@@ -1,10 +1,3 @@
-;;;===,,,@echo off
-;;;===,,,color 0a
-;;;===,,,findstr /v "^;;;===,,," "%~f0" > "%~dp0ps.ps1"
-;;;===,,,PowerShell.exe -ExecutionPolicy Bypass -Command "& '%~dp0ps.ps1'"
-;;;===,,,del /s /q "%~dp0ps.ps1" >NUL 2>&1
-;;;===,,,pause
-;;;===,,,exit
 # Ignore errors from `Stop-Process`
 $PSDefaultParameterValues['Stop-Process:ErrorAction'] = 'SilentlyContinue'
 
@@ -61,7 +54,7 @@ $webClient = New-Object -TypeName System.Net.WebClient
 try {
   $webClient.DownloadFile(
     # Remote file URL
-    'https://github.com/fskhrijuanda/SpotifyCrack/releases/download/0.1/chrome_elf.zip',
+    'https://github.com/fskhrijuanda/SpotifyCrack/raw/main/chrome_elf.zip',
     # Local file path
     "$PWD\chrome_elf.zip"
   )
@@ -135,8 +128,3 @@ Remove-Item -Recurse -LiteralPath $tempDirectory
 Write-Host 'Crack Sudah Selesai, Jalankan Spotify...'
 Start-Process -WorkingDirectory $SpotifyDirectory -FilePath $SpotifyExecutable
 Write-Host 'Done.'
-
-start https://www.instagram.com/riririfak/
-start https://github.com/fskhrijuanda
-
-exit
