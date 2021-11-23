@@ -1,3 +1,8 @@
+### How to use?
+run SpotifyCrack.exe with run as administrator and done
+
+
+
 ### Donate
 * <a href="https://trakteer.id/fakhrijuanda12" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png" height="40" style="border:0px;height:40px;" alt="Trakteer Saya"></a>
 
